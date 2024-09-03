@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Sessão</title>
+    <title>Sessões - Cinema</title>
 </head>
+
 <body>
-    <h1>Cadastro de Sessão</h1>
+    <h1>Cadastro de Sessões</h1>
     <form action="/cadastrar-sessao" method="post">
         <label for="filmeSessao">Filme:</label>
         <select id="filmeSessao" name="filmeSessao" required>
-            <!-- Opções de filmes devem ser preenchidas dinamicamente -->
+            <!-- Opções de filmes cadastrados -->
         </select><br><br>
 
         <label for="salaSessao">Sala:</label>
         <select id="salaSessao" name="salaSessao" required>
-            <!-- Opções de salas devem ser preenchidas dinamicamente -->
+            <!-- Opções de salas cadastradas -->
         </select><br><br>
 
         <label for="horarioSessao">Horário da Sessão:</label>
@@ -23,5 +25,9 @@
 
         <button type="submit">Cadastrar Sessão</button>
     </form>
+
+    <h2>Lista de Sessões</h2>
+    <!-- Aqui você pode listar as sessões cadastradas -->
 </body>
+
 </html>
