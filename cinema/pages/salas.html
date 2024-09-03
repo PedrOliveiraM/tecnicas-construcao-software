@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Ingresso</title>
+</head>
+<body>
+    <h1>Compra de Ingresso</h1>
+    <form action="/comprar-ingresso" method="post">
+        <label for="sessaoCompra">Sessão:</label>
+        <select id="sessaoCompra" name="sessaoCompra" required>
+            <!-- Opções de sessões disponíveis devem ser preenchidas dinamicamente -->
+        </select><br><br>
+
+        <label for="tipoIngresso">Tipo de Ingresso:</label>
+        <select id="tipoIngresso" name="tipoIngresso" required>
+            <option value="inteiro">Inteiro</option>
+            <option value="meio">Meio</option>
+        </select><br><br>
+
+        <button type="submit">Comprar Ingresso</button>
+    </form>
+</body>
+</html>
