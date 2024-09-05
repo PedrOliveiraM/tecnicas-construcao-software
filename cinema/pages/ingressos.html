@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingressos - Cinema</title>
-    <link rel="stylesheet" href="/style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingressos - Cinema</title>
+  <link rel="stylesheet" href="/style/style.css">
 
 </head>
+
 <body>
   <header>
     <h1>SG-Cinema</h1>
@@ -22,24 +24,28 @@
     </nav>
     <hr />
   </header>
+  <h1>Compra de Ingressos</h1>
+  <form action="/comprar-ingresso" method="post">
+    <label for="clienteIngresso">Cliente:</label>
+    <select id="clienteIngresso" name="clienteIngresso" required>
+    </select><br><br>
+    <label for="sessaoIngresso">Sessão:</label>
 
-    <h1>Compra de Ingressos</h1>
-    <form action="/comprar-ingresso" method="post">
-        <label for="clienteIngresso">Cliente:</label>
-        <select id="clienteIngresso" name="clienteIngresso" required>
-        </select><br><br>
+    <select id="sessaoIngresso" name="sessaoIngresso" required>
+      <option value="10:00">10:00</option>
+      <option value="13:00">13:00</option>
+      <option value="15:00">15:00</option>
+      <option value="18:00">18:00</option>
+      <option value="18:00">21:00</option>
+    </select><br><br>
 
-        <label for="sessaoIngresso">Sessão:</label>
-        <select id="sessaoIngresso" name="sessaoIngresso" required>
-        </select><br><br>
-
-        <label for="tipoIngresso">Tipo de Ingresso:</label>
-        <select id="tipoIngresso" name="tipoIngresso" required>
-            <option value="inteiro">Inteiro</option>
-            <option value="meio">Meio</option>
-        </select><br><br>
-
-        <button type="submit">Comprar Ingresso</button>
-    </form>
+    <label for="tipoIngresso">Tipo de Ingresso:</label>
+    <select id="tipoIngresso" name="tipoIngresso" required>
+      <option value="inteiro">Inteiro</option>
+      <option value="meio">Meio</option>
+    </select><br><br>
+    <button type="submit">Comprar Ingresso</button>
+  </form>
 </body>
+
 </html>
