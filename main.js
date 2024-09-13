@@ -19,7 +19,7 @@ async function getTopRatedMovies() {
 
 function createCard(imageSrc, title, text) {
   const card = document.createElement('div');
-  card.className = 'card col card-text';
+  card.className = 'card  bg-dark card-text col-12 col-md-3 mb-4';
   card.style.width = '18rem';
 
   const img = document.createElement('img');
@@ -28,14 +28,14 @@ function createCard(imageSrc, title, text) {
   img.alt = '...';
 
   const cardBody = document.createElement('div');
-  cardBody.className = 'card-body';
+  cardBody.className = 'card-body bg-dark';
 
   const cardTitle = document.createElement('h5');
-  cardTitle.className = 'card-title';
+  cardTitle.className = 'card-title text-white';
   cardTitle.innerText = title;
 
   const cardText = document.createElement('p');
-  cardText.className = 'card-text';
+  cardText.className = 'card-text text-light';
   cardText.innerText = text;
 
   const buttonWatchNow = document.createElement('button');
