@@ -60,16 +60,29 @@
     </nav>
   </header>
 
-  <h1>Cadastro de Salas</h1>
-  <form action="/cadastrar-sala" method="post">
-    <label for="nomeSala">Nome da Sala:</label>
-    <input type="text" id="nomeSala" name="nomeSala" required><br><br>
+  <main class="form-container">
+    <div class="form-box">
+      <h1 class="text-center mb-4">Cadastro de Salas</h1>
+      <form action="/cadastrar-sala" method="post">
+        <div class="mb-3">
+          <label for="nomeSala" class="form-label">Nome da Sala:</label>
+          <input type="text" id="nomeSala" name="nomeSala" class="form-control" required>
+        </div>
 
-    <label for="capacidadeSala">Capacidade (número de assentos):</label>
-    <input type="number" id="capacidadeSala" name="capacidadeSala" required><br><br>
+        <div class="mb-3">
+          <label for="capacidadeSala" class="form-label">Capacidade (número de assentos):</label>
+          <input type="number" id="capacidadeSala" name="capacidadeSala" class="form-control" required>
+        </div>
 
-    <button type="submit">Cadastrar Sala</button>
-  </form>
-</body>
+        <button type="submit" class="btn btn-primary w-100">Cadastrar Sala</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-danger py-3 mt-5">
+    <div class="container d-flex justify-content-center">
+      <p class="mb-0 fw-bold">&copy; Pedro Oliveira. Todos os direitos reservados. Cinema SG</p>
+    </div>
+  </footer>
 
 </html>

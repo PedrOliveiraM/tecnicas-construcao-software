@@ -68,3 +68,33 @@ section img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+
+
+
+body {
+  font-family: 'Alfa Slab One', sans-serif;
+  background-color: #f0f0f0; /* Cor de fundo para contraste */
+  height: 100vh; /* Altura total da tela */
+  margin: 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 60px;
+}
+.form-box {
+  background-color: #ffffff;
+  width: 600px;
+  height: auto;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  margin-bottom: 7em;
+}
+.form-container h1 {
+  margin-bottom: 5rem;
+}
