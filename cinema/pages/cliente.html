@@ -59,20 +59,56 @@
     </nav>
   </header>
 
-  <h1>Cadastro de Clientes</h1>
-  <form action="/cadastrar-cliente" method="post">
-    <label for="nomeCliente">Nome do Cliente:</label>
-    <input type="text" id="nomeCliente" name="nomeCliente" required><br><br>
+  <main class="container my-5">
+    <h1 class="text-center mb-4">Cadastro de Clientes</h1>
+    <form action="/cadastrar-cliente" method="post" class="mb-5">
+      <div class="mb-3">
+        <label for="nomeCliente" class="form-label text-white">Nome do Cliente:</label>
+        <input type="text" id="nomeCliente" name="nomeCliente" class="form-control" required>
+      </div>
 
-    <label for="emailCliente">Email do Cliente:</label>
-    <input type="email" id="emailCliente" name="emailCliente" required><br><br>
+      <div class="mb-3">
+        <label for="emailCliente" class="form-label text-white">Email do Cliente:</label>
+        <input type="email" id="emailCliente" name="emailCliente" class="form-control" required>
+      </div>
 
-    <label for="telefoneCliente">Telefone do Cliente:</label>
-    <input type="tel" id="telefoneCliente" name="telefoneCliente"><br><br>
+      <div class="mb-3">
+        <label for="telefoneCliente" class="form-label text-white">Telefone do Cliente:</label>
+        <input type="tel" id="telefoneCliente" name="telefoneCliente" class="form-control">
+      </div>
 
-    <button type="submit">Cadastrar Cliente</button>
-  </form>
-  <h2>Lista de Clientes</h2>
+      <button type="submit" class="btn btn-primary">Cadastrar Cliente</button>
+    </form>
+
+    <h2 class="text-center text-white">Lista de Clientes</h2>
+    <!-- Aqui você pode adicionar uma tabela ou outro elemento para listar os clientes -->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Email</th>
+          <th scope="col">Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Exemplo de cliente -->
+        <tr>
+          <th scope="row">1</th>
+          <td>João da Silva</td>
+          <td>joao.silva@example.com</td>
+          <td>(11) 98765-4321</td>
+        </tr>
+        <!-- Outros clientes podem ser adicionados aqui -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="bg-danger py-3 mt-5">
+    <div class="container d-flex justify-content-center">
+      <p class="mb-0 fw-bold text-white">&copy; Pedro Oliveira. Todos os direitos reservados. Cinema SG</p>
+    </div>
+  </footer>
 </body>
 
 </html>
