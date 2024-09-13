@@ -58,22 +58,45 @@
       </div>
     </nav>
   </header>
+  <main class="form-container">
+    <div class="form-box">
+      <h1 class="text-center mb-4">Cadastro de Sessões</h1>
+      <form action="/cadastrar-sessao" method="post">
+        <div class="mb-3">
+          <label for="filmeSessao" class="form-label">Filme:</label>
+          <select id="filmeSessao" name="filmeSessao" class="form-select" required>
+            <option value="DeadPool e Wolverine">DeadPool e Wolverine</option>
+            <option value="O Homem torto">O Homem torto</option>
+            <option value="Meu Malvado Favorito 4">Meu Malvado Favorito 4</option>
+            <option value="Não fale Mal">Não fale Mal</option>
+          </select>
+        </div>
 
-  <h1>Cadastro de Sessões</h1>
-  <form action="/cadastrar-sessao" method="post">
-    <label for="filmeSessao">Filme:</label>
-    <select id="filmeSessao" name="filmeSessao" required>
-    </select><br><br>
+        <div class="mb-3">
+          <label for="salaSessao" class="form-label">Sala:</label>
+          <select id="salaSessao" name="salaSessao" class="form-select" required>
+            <option value="Sala Xd">Sala Xd</option>
+            <option value="Sala New Hub">Sala New Hub</option>
+            <option value="Sala New Experience">Sala New Experience</option>
+            <option value="Sala Effects 3D">Sala Effects 3D</option>
+          </select>
+        </div>
 
-    <label for="salaSessao">Sala:</label>
-    <select id="salaSessao" name="salaSessao" required>
-    </select><br><br>
+        <div class="mb-3">
+          <label for="horarioSessao" class="form-label">Horário da Sessão:</label>
+          <input type="datetime-local" id="horarioSessao" name="horarioSessao" class="form-control" required>
+        </div>
 
-    <label for="horarioSessao">Horário da Sessão:</label>
-    <input type="datetime-local" id="horarioSessao" name="horarioSessao" required><br><br>
+        <button type="submit" class="btn btn-primary w-100">Cadastrar Sessão</button>
+      </form>
+    </div>
+  </main>
 
-    <button type="submit">Cadastrar Sessão</button>
-  </form>
+  <footer class="bg-danger py-3 mt-5">
+    <div class="container d-flex justify-content-center">
+      <p class="mb-0 fw-bold">&copy; Pedro Oliveira. Todos os direitos reservados. Cinema SG</p>
+    </div>
+  </footer>
 </body>
 
 </html>
