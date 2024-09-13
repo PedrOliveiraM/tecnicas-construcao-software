@@ -68,3 +68,19 @@ async function displayTopRatedMovies() {
 }
 
 displayTopRatedMovies();
+
+
+
+// Configuração do modal
+const myModal = new bootstrap.Modal(document.getElementById('myModal'));
+
+// Evento de clique no botão "Comprar Ingresso"
+document.getElementById('comprarIngressoBtn').addEventListener('click', () => {
+  myModal.show(); // Mostra o modal
+});
+
+// Foco no input ao mostrar o modal
+const myInput = document.getElementById('clienteIngresso');
+myModal._element.addEventListener('shown.bs.modal', () => {
+  myInput.focus();
+});

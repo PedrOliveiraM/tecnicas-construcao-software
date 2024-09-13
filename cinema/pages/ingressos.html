@@ -59,28 +59,65 @@
     </nav>
   </header>
 
-  <h1>Compra de Ingressos</h1>
-  <form action="/comprar-ingresso" method="post">
-    <label for="clienteIngresso">Cliente:</label>
-    <select id="clienteIngresso" name="clienteIngresso" required>
-    </select><br><br>
-    <label for="sessaoIngresso">Sessão:</label>
+  <main class="form-container">
+    <div class="form-box">
+      <h1 class="text-center mb-4">Compra de Ingressos</h1>
+      <form>
+        <div class="mb-3">
+          <label for="clienteIngresso" class="form-label">Cliente:</label>
+          <input id="clienteIngresso" name="clienteIngresso" class="form-select" required placeholder="Seu nome">
 
-    <select id="sessaoIngresso" name="sessaoIngresso" required>
-      <option value="10:00">10:00</option>
-      <option value="13:00">13:00</option>
-      <option value="15:00">15:00</option>
-      <option value="18:00">18:00</option>
-      <option value="18:00">21:00</option>
-    </select><br><br>
+          </input>
+        </div>
 
-    <label for="tipoIngresso">Tipo de Ingresso:</label>
-    <select id="tipoIngresso" name="tipoIngresso" required>
-      <option value="inteiro">Inteiro</option>
-      <option value="meio">Meio</option>
-    </select><br><br>
-    <button type="submit">Comprar Ingresso</button>
-  </form>
+        <div class="mb-3">
+          <label for="sessaoIngresso" class="form-label">Sessão:</label>
+          <select id="sessaoIngresso" name="sessaoIngresso" class="form-select" required>
+            <option value="10:00">10:00</option>
+            <option value="13:00">13:00</option>
+            <option value="15:00">15:00</option>
+            <option value="18:00">18:00</option>
+            <option value="21:00">21:00</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="tipoIngresso" class="form-label">Tipo de Ingresso:</label>
+          <select id="tipoIngresso" name="tipoIngresso" class="form-select" required>
+            <option value="inteiro">Inteiro</option>
+            <option value="meio">Meio</option>
+          </select>
+        </div>
+
+        <button type="button" id="comprarIngressoBtn" class="btn btn-primary w-100">Comprar Ingresso</button>
+      </form>
+    </div>
+  </main>
+
+  <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Escolha um assento </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/assets/assentos.png" alt="Poltronas" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-danger py-3 mt-5">
+    <div class="container d-flex justify-content-center">
+      <p class="mb-0 fw-bold">&copy; Pedro Oliveira. Todos os direitos reservados. Cinema SG</p>
+    </div>
+  </footer>
+
 </body>
 
 </html>
