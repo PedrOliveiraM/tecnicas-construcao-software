@@ -1,8 +1,9 @@
-# SG-Cinema
+![Logo](assets/logo-sg-cinema-sem-fundo.png)
 
 ## Descrição
 
 O SG-Cinema é um sistema de gerenciamento de cinema que permite a administração de clientes, filmes, sessões, ingressos e salas. Este projeto foi desenvolvido utilizando HTML, CSS, e JavaScript com o framework Bootstrap para criar uma interface responsiva e moderna.
+Feito para a disciplina de tecnologia e construção de software.
 
 ## Funcionalidades
 
@@ -46,11 +47,15 @@ Aqui estão alguns exemplos das telas do projeto:
 
 ### Tela Principal
 
-![Tela Principal](assets/TelaPrincipal.png)
+![Tela Principal](assets/Cinema-SG.png)
 
 ### Tela de Compra de Ingressos
 
 ![Tela de Compra de Ingressos](assets/EscolhaUmAssento.png)
+
+
+### APIs
+https://developer.themoviedb.org/docs/getting-started
 
 ## Contribuição
 
@@ -63,3 +68,4 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 ## Contato
 
 Para dúvidas ou sugestões, entre em contato com [Pedro Oliveira](mailto:pedropucmont@gmail.com).
+
