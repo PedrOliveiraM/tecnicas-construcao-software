@@ -70,8 +70,6 @@ section img {
 }
 
 
-
-
 body {
   font-family: 'Alfa Slab One', sans-serif;
   background-color: #f0f0f0; /* Cor de fundo para contraste */
@@ -97,4 +95,18 @@ body {
 }
 .form-container h1 {
   margin-bottom: 5rem;
+}
+
+.banner-image {
+  height: 300px; /* Altura fixa para os banners */
+  object-fit: cover; /* Ajusta a imagem para cobrir a área sem distorcer */
+  object-position: center; /* Centraliza a imagem dentro do espaço */
+  width: 100vw;
+  padding: 0px 90px ;
+  border-radius: 20px;
+}
+
+#logo {
+  width: 200px;
+  height: 200px;
 }

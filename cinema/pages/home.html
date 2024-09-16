@@ -13,7 +13,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="/assets/logo-icon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/logo-sg-cinema-sem-fundo.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -21,78 +21,77 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-63vh3vVUSNdv3PABGd6E+5To8FXXDYi/4tJ5MBz9kl/3AAyLt6+RUhU8Fq1LRMAyoByw8rHgAqLYo9I3GP9zQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
 
 <body class="flex flex-column gap-3 justify-content-center">
-  <header class="container my-4">
-    <div class="d-flex gap-2 justify-content-center">
-      <img src="/assets/logo-icon.svg" #logo alt="logo">
-      <h1 class="text-center fw-bold">SG-Cinema</h1>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark rounded">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cliente.html">Clientes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="filmes.html">Filmes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ingressos.html">Ingressos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="salas.html">Salas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sessoes.html">Sessões</a>
-            </li>
-          </ul>
+  <header class="container">
+    <div class="d-flex gap-2 justify-content-center align-items-center">
+      <img src="/assets/logo-sg-cinema-sem-fundo.png" id="logo" alt="logo">
+      <nav class="w-100 navbar navbar-expand-lg navbar-dark rounded">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cliente.html">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="filmes.html">Filmes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ingressos.html">Ingressos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="salas.html">Salas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sessoes.html">Sessões</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main class="container text-center px-4">
     <div class="d-flex justify-content-center my-4">
-      <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="/assets/Banner-sg-cinema.jpg" class="d-block w-100" alt="...">
+      <div id="carouselExampleInterval" class="carousel slide px-5" data-bs-ride="carousel">
+        <div class="carousel-inner px-5">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="/assets/Banner-sg-cinema.jpg" class="banner-image" alt="Banner SG Cinema">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img
               src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fimages%2Fcms%2FbannerHero%2FBannerHero-575026d5-b895-443e-9571-2a359ba02a93.png&w=1920&q=75"
-              class="d-block w-100" alt="Silvio O Filme">
+              class="banner-image" alt="Silvio O Filme">
           </div>
           <div class="carousel-item">
             <img
               src="https://www.cinemark.com.br/_next/image?url=https%3A%2F%2Fcdnim.prd.cineticket.com.br%2Fimages%2Fcms%2FbannerHero%2FBannerHero-73f2c73f-f5fe-4a98-9709-427bfe42b15d.png&w=1920&q=75"
-              class="d-block w-100" alt="Amigo pinguin">
+              class="banner-image" alt="Amigo Pinguin">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+
+        <button class="carousel-control-prev mx-lg-5" type="button" data-bs-target="#carouselExampleInterval"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        <button class="carousel-control-next mx-lg-5" type="button" data-bs-target="#carouselExampleInterval"
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </div>
+
     <div id="moviesContainer" class="row px-4 gap-4">
     </div>
   </main>
