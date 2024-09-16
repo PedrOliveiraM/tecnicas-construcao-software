@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Filme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div id="movie-card" class="card" style="width: 18rem; display: none;">
+            <img id="movie-poster" src="" class="card-img-top" alt="Poster do Filme">
+            <div class="card-body">
+                <h5 id="movie-title" class="card-title"></h5>
+                <p id="movie-description" class="card-text"></p>
+                <p id="movie-release-date" class="card-text"></p>
+                <a href="#" class="btn btn-primary" id="movie-link">Ver no site oficial</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function getMovieIdFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('id');
+        }
+
+        // Função para buscar os detalhes do filme usando o ID
+        async function getMovieByID(movieId) {
+            try {
+                const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}`);
+                const movieData = await response.json();
+                return movieData;
+            } catch (error) {
+                console.error("Erro ao buscar detalhes do filme:", error);
+            }
+        }
+
+        function displayMovieDetails(movie) {
+            const movieCard = document.getElementById('movie-card');
+            const moviePoster = document.getElementById('movie-poster');
+            const movieTitle = document.getElementById('movie-title');
+            const movieDescription = document.getElementById('movie-description');
+            const movieReleaseDate = document.getElementById('movie-release-date');
+            const movieLink = document.getElementById('movie-link');
+
+            moviePoster.src = movie.poster; // URL do poster do filme
+            movieTitle.textContent = movie.title;
+            movieDescription.textContent = movie.description;
+            movieReleaseDate.textContent = `Data de lançamento: ${movie.release_date}`;
+            movieLink.href = movie.official_site; // Link oficial do filme
+
+            movieCard.style.display = 'block'; // Exibe o card após preencher os detalhes
+        }
+
+        // Quando a página carrega
+        document.addEventListener('DOMContentLoaded', async () => {
+            const movieId = getMovieIdFromURL(); // Obtém o ID da URL
+            if (movieId) {
+                const movieDetails = await getMovieByID(movieId); // Chama a API para obter os detalhes
+                if (movieDetails) {
+                    displayMovieDetails(movieDetails); // Exibe os detalhes na página
+                }
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
