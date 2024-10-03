@@ -130,17 +130,16 @@ function showToast(message, type) {
   const toastElement = document.getElementById('toast');
   const toastBody = document.querySelector('#toast .toast-body');
   
-  // Limpa as classes de fundo antes de aplicar a nova
   toastElement.classList.remove('bg-success', 'bg-danger');
 
   if (type === 'error') {
-    toastElement.classList.add('bg-danger'); // Adiciona fundo vermelho para erro
+    toastElement.classList.add('bg-danger'); 
   } else {
-    toastElement.classList.add('bg-success'); // Adiciona fundo verde para sucesso
+    toastElement.classList.add('bg-success');
   }
 
-  toastBody.textContent = message; // Define a mensagem do toast
-  const toast = new bootstrap.Toast(toastElement); // Cria a instância do toast
-  toast.show(); // Exibe o toast
+  toastBody.textContent = message;
+  const toast = new bootstrap.Toast(toastElement);
+  toast.show(); 
 }
 
